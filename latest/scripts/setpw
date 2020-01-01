@@ -1,0 +1,3 @@
+#!/bin/bash
+
+murmurd -ini /opt/murmur/config/murmur.ini -readsupw

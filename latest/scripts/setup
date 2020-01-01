@@ -1,0 +1,6 @@
+#!/bin/bash
+
+CONTAINER_ALREADY_STARTED=".initialized"
+
+# Check if murmur server config ist present. If not copy the default on boot
+[[ ! -e "/opt/murmur/config/murmur.ini" ]] && cp /etc/murmur.ini /opt/murmur/config/murmur.ini || echo "Config found."

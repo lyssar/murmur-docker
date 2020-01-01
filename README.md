@@ -1,11 +1,14 @@
 # Murmur Docker Container
 
-TBD
+[![](https://images.microbadger.com/badges/image/cefurox/murmur.svg)](https://microbadger.com/images/cefurox/murmur "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/cefurox/murmur.svg)](https://microbadger.com/images/cefurox/murmur "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/commit/cefurox/murmur.svg)](https://microbadger.com/images/cefurox/murmur "Get your own commit badge on microbadger.com")
+[![](https://images.microbadger.com/badges/license/cefurox/murmur.svg)](https://microbadger.com/images/cefurox/murmur "Get your own license badge on microbadger.com")
 
 ## Docker tags:
 | Tag | Murmur Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-TBD
+|latest|1.3.0|Latest mumble server version| 01.01.2020
 
 ---
 

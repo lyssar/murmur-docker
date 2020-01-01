@@ -64,6 +64,8 @@ services:
             TZ: UTC
 ```
 
+More exmaples [here](https://github.com/cefuroX/murmur-docker/tree/master/examples)
+
 ---
 
 ## Change super password

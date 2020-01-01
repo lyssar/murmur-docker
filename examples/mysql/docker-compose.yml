@@ -1,0 +1,36 @@
+version: '3.7'
+networks:
+    murmur:
+services:
+    murmur:
+        image: cefurox/murmur:latest
+        networks:
+            - murmur
+        depends_on:
+            - db
+        restart: always
+         # imporant: qt-mysql needs the hostname "mysql"
+        links:
+            - db:mysql
+        ports:
+            - 64738:64738
+            - 64738:64738/udp
+        volumes:
+            - ./config:/opt/murmur/config
+            - ./data:/opt/murmur/data
+            - ./log:/opt/murmur/log
+        environment:
+            TZ: UTC
+    db:
+        image: bitnami/mariadb:10.2
+        restart: always
+        networks:
+            - murmur
+        # make sure to use the same user/database/pw in your config/murmur.ini
+        environment:
+            - MARIADB_ROOT_PASSWORD=masterpw
+            - MARIADB_USER=murmur_db_user
+            - MARIADB_PASSWORD=test
+            - MARIADB_DATABASE=murmur_db
+        volumes:
+            - ./mdbcefmurmur:/var/lib/mysql

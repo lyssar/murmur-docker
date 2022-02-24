@@ -8,7 +8,7 @@
 ## Docker tags:
 | Tag | Murmur Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-|latest|1.3.0|Latest mumble server version| 01.01.2020
+|latest|1.4.0|Latest mumble server version| 24.02.2020
 
 ---
 
